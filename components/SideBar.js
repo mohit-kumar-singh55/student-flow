@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import { useRouter } from 'next/router'
+import { useRouter } from 'next/router';
 import {
   ActiveHomeIcon,
   ActiveProfileIcon,
@@ -10,9 +10,9 @@ import {
   RevenueIcon,
   ReviewIcon,
   SessionIcon,
-  
   SettingIcon,
-} from '../icons'
+} from '../icons';
+
 function SideBar() {
   const router = useRouter()
   const links = [
@@ -84,11 +84,10 @@ export function SideBarLinks({ links, hideIcon = false }) {
       <ul className=''>
         {links.map((item, i) => (
           <li
-            className={`align-center mb-5 block justify-center text-left font-roboto text-lg  font-bold ${
-              item.active
-                ? 'rounded-2xl bg-pink px-4 py-3 2xl:px-9 xl:px-5'
-                : 'px-4 py-3 2xl:px-9 xl:px-5'
-            } font-roboto`}
+            className={`align-center mb-5 block justify-center text-left font-roboto text-lg  font-bold ${item.active
+              ? 'rounded-2xl bg-pink px-4 py-3 2xl:px-9 xl:px-5'
+              : 'px-4 py-3 2xl:px-9 xl:px-5'
+              } font-roboto`}
           >
             <Link href={item.link}>
               <a className={`flex ${item.active ? 'text-white' : null}`}>

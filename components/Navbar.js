@@ -27,9 +27,12 @@ function Navbar() {
     { name: 'My Revenue', link: '/tutorDashboard/revenue', active: router.pathname === '/tutorDashboard/revenue', icons: <RevenueIcon />, activeIcons: <ActiveProfileIcon /> },
     { name: 'Settings', link: '/tutorDashboard/settings', active: router.pathname === '/tutorDashboard/settings', icons: <SettingIcon />, activeIcons: <ActiveProfileIcon /> },
   ]
-  const [onDashboard, setOnDashboard] = useState(route.split('/')[1] === 'tutorDashboard')
+  const [onDashboard, setOnDashboard] = useState(route.split('/')[1] === 'tutorDashboard');
+  const [onStudentDashboard, setOnStudentDashboard] = useState(route.split('/')[1] === 'studentDashboard');
+
   useEffect(() => {
-    setOnDashboard(route.split('/')[1] === 'tutorDashboard')
+    setOnDashboard(route.split('/')[1] === 'tutorDashboard');
+    setOnDashboard(route.split('/')[1] === 'studentDashboard');
   }, [route])
 
   function toggleMenu() {
