@@ -85,16 +85,12 @@ function Navbar() {
           {/* </div> */}
           <MenuLink onDashboard={onDashboard} />
           <div className=" flex gap-12      bg-white md:justify-between">
-            {/* <div className=" "> */}
             <Logo height="47" width="179" />
-            {/* </div> */}
-            {/* <Logo height="34" width="134" /> */}
             <div
               className={`mx-auto hidden  items-center    justify-center gap-2  ${showSearchOnLg ? 'lg:flex ' : 'hidden'
                 }`}
             >
               <NavSearchBox />
-              {/* <SearchBox searchCss={'bg-red-400 '} /> */}
               <span
                 className=" rounded-full"
                 onClick={() => setShowSearchOnLg(false)}

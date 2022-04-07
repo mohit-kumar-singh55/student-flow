@@ -87,13 +87,14 @@ export default StudentSideBar
 
 export function StudentSideBarLinks({ links, hideIcon = false }) {
     return (
-        <nav className='w-full'>
-            <ul className=''>
+        <nav className="w-full">
+            <ul className="">
                 {links.map((item, i) => (
                     <li
+                        key={i}
                         className={`align-center mb-5 block justify-center text-left font-roboto text-lg  font-bold ${item.active
-                            ? 'rounded-2xl bg-pink px-4 py-3 2xl:px-9 xl:px-5'
-                            : 'px-4 py-3 2xl:px-9 xl:px-5'
+                                ? 'rounded-2xl bg-pink px-4 py-3 xl:px-5 2xl:px-9'
+                                : 'px-4 py-3 xl:px-5 2xl:px-9'
                             } font-roboto`}
                     >
                         <Link href={item.link}>

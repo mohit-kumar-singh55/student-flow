@@ -9,7 +9,7 @@ import Link from 'next/link'
 const tutorDashboard = () => {
   useEffect(() => {
     if (true) {
-      isAuth()
+      // isAuth()
     }
   }, [])
 
