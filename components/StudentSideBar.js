@@ -67,8 +67,8 @@ function StudentSideBar() {
         },
         {
             name: 'Settings',
-            link: '/studentDashboard/settings',
-            active: router.pathname === '/studentDashboard/settings',
+            link: '/studentDashboard/settings/nameAndLogin',
+            active: router.pathname?.split('/').includes('settings'),
             icons: <SettingIcon />,
             activeIcons: <ActiveProfileIcon />,
         },
