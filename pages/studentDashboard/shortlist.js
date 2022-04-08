@@ -13,10 +13,10 @@ const Shortlist = () => {
 
 
             {/* main container */}
-            <main className='flex flex-wrap items-center md:justify-between justify-center w-full'>
-                {Array.from(Array(3), (_, index) => index + 1).map((index) => (
+            <main className='flex flex-wrap items-center md:justify-between justify-center w-full gap-x-8 gap-y-16'>
+                {Array.from(Array(9), (_, index) => index + 1).map((index) => (
                     <Link href={'/tutors'}>
-                        <a key={index} className=" hidden lg:flex">
+                        <a key={index} className="flex">
                             <CourseCart
                                 topRightTitle={'top tutors'}
                                 coverImg="/Images/CourseCart/girl-using-tablet.png"

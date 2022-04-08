@@ -152,7 +152,7 @@ function CourseCart({
 
   function Description() {
     return (
-      <div className={` px-4 font-monts font-semibold text-xs capitalize text-[#606060]   `}>
+      <div className={` px-4 font-monts font-semibold text-xs capitalize text-[#606060] whitespace-normal`}>
         <span className='font-extrabold'>Brief :</span> dolor sit amet, consectetur
         elit. Fringilla enim, at rhoncus nisl, condimentum,Fringilla enim,
         <span>.....</span>
