@@ -4,7 +4,7 @@ import { TiTick } from 'react-icons/ti';
 const HomePage = () => {
     return (
         <>
-            <div className="h-full whitespace-nowrap p-5 font-roboto capitalize lg:p-2 xl:p-9">
+            <div className="h-full whitespace-nowrap font-roboto capitalize px-4 sm:px-9 sm:p-9 w-full block mx-auto">
                 <div className="mb-9 flex gap-3 items-end">
                     <h1 className="text-2xl font-semibold text-[#5E5252]">
                         Profile And Trail Sessions
@@ -12,10 +12,10 @@ const HomePage = () => {
                     <small className="text-[#A0A0A0] font-bold text-[12px] pb-1">Last 365 Days</small>
                 </div>
 
-                <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-3 xl:gap-9 ">
+                <div className="flex items-center md:justify-between justify-center flex-wrap gap-10">
                     {/* Next Session */}
-                    <div className="rounded-2xl bg-white  lg:px-2 lg:py-4 xl:py-[30px] xl:px-4 ">
-                        <div className="mb-[54px] flex flex-col gap-[11px]    ">
+                    <div className="sm:w-[380px] w-full h-[500px] rounded-2xl bg-white p-4 shadow-lg">
+                        <div className="mb-[40px] flex flex-col gap-[11px]">
                             <h3 className="text-2xl font-semibold">next session</h3>
                             <p className="text-base font-medium">
                                 is with in
@@ -38,7 +38,7 @@ const HomePage = () => {
                                 <label className="font-bold">session no.</label>
                                 <p className=" justify-self-end font-medium">5</p>
                             </div>
-                            <div className="mt-[59px]  mb-5">
+                            <div className="mt-[40px]">
                                 <button className=" w-full rounded-2xl bg-[#FC4D6D] py-5 text-2xl font-bold capitalize text-white ">
                                     enter classroom
                                 </button>
@@ -47,7 +47,7 @@ const HomePage = () => {
                     </div>
 
                     {/* Courses, Progress and Certificates */}
-                    <div className="rounded-2xl bg-white lg:px-2 lg:py-4 xl:py-[30px] xl:px-4 ">
+                    <div className="sm:w-[380px] w-full h-[500px] rounded-2xl bg-white p-4 shadow-lg">
                         <div className="mb-[37px] flex flex-col  gap-[7px]  ">
                             <h3 className="text-3xl font-semibold text-[#5E5252]">
                                 Courses in progress
@@ -69,7 +69,7 @@ const HomePage = () => {
                     </div>
 
                     {/* Targeted Skill Status */}
-                    <div className="rounded-2xl bg-white lg:px-2 lg:py-4 xl:py-[30px] xl:px-4 ">
+                    <div className="sm:w-[380px] w-full h-[500px] rounded-2xl bg-white p-4 shadow-lg">
                         <div className="mb-[37px] flex flex-col">
                             <h3 className="text-[22px] font-semibold text-[#5E5252]">
                                 Targeted Skill Status
@@ -116,6 +116,28 @@ const HomePage = () => {
                                 <label>profile uploaded</label>
                             </div>
                         </div>
+                    </div>
+
+                    {/* Upcoming Booked Sessions */}
+                    <div className='sm:w-[380px] w-full h-[120px] rounded-2xl bg-white p-4 shadow-lg'>
+                        <div className='flex flex-col justify-between w-full h-full font-roboto'>
+                            <h2 className='font-medium text-[#767676]'>
+                                Upcoming Booked Sessions
+                            </h2>
+                            <p className='text-[30px] font-semibold text-[#494949]'>
+                                83
+                            </p>
+                        </div>
+                    </div>
+
+                    {/* Empty Boxes as per figma */}
+                    <div className='sm:w-[380px] w-full h-[120px] rounded-2xl bg-white p-4 shadow-lg'>
+
+                    </div>
+
+                    {/* Empty Boxes as per figma */}
+                    <div className='sm:w-[380px] w-full h-[120px] rounded-2xl bg-white p-4 shadow-lg'>
+
                     </div>
                 </div>
             </div>
