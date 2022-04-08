@@ -4,7 +4,7 @@ import { TiTick } from 'react-icons/ti';
 const HomePage = () => {
     return (
         <>
-            <div className="h-full whitespace-nowrap font-roboto capitalize px-4 sm:px-9 sm:p-9 w-full block mx-auto">
+            <div className="h-full whitespace-nowrap font-roboto capitalize px-4 sm:px-9 p-9 w-full block mx-auto">
                 <div className="mb-9 flex gap-3 items-end">
                     <h1 className="text-2xl font-semibold text-[#5E5252]">
                         Profile And Trail Sessions
