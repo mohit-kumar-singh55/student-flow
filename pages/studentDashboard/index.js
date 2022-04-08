@@ -5,14 +5,15 @@ const HomePage = () => {
     return (
         <>
             <div className="h-full whitespace-nowrap p-5 font-roboto capitalize lg:p-2 xl:p-9">
-                <div className="mb-9 flex justify-between ">
+                <div className="mb-9 flex gap-3 items-end">
                     <h1 className="text-2xl font-semibold text-[#5E5252]">
                         Profile And Trail Sessions
                     </h1>
-                    <h1 className="font-bold text-[#FC4D6D]">archived Sessions </h1>
+                    <small className="text-[#A0A0A0] font-bold text-[12px] pb-1">Last 365 Days</small>
                 </div>
 
                 <div className="grid gap-5 md:grid-cols-2 lg:grid-cols-3 lg:gap-3 xl:gap-9 ">
+                    {/* Next Session */}
                     <div className="rounded-2xl bg-white  lg:px-2 lg:py-4 xl:py-[30px] xl:px-4 ">
                         <div className="mb-[54px] flex flex-col gap-[11px]    ">
                             <h3 className="text-2xl font-semibold">next session</h3>
@@ -32,9 +33,9 @@ const HomePage = () => {
                                 </p>
                                 <label className="font-bold">skill</label>
                                 <p className=" justify-self-end font-medium">gardening</p>
-                                <label className="font-bold">student</label>
+                                <label className="font-bold">Tutor</label>
                                 <p className=" justify-self-end font-medium">mr.jhon carter</p>
-                                <label className="font-bold">session number</label>
+                                <label className="font-bold">session no.</label>
                                 <p className=" justify-self-end font-medium">5</p>
                             </div>
                             <div className="mt-[59px]  mb-5">
@@ -44,45 +45,35 @@ const HomePage = () => {
                             </div>
                         </div>
                     </div>
+
+                    {/* Courses, Progress and Certificates */}
                     <div className="rounded-2xl bg-white lg:px-2 lg:py-4 xl:py-[30px] xl:px-4 ">
                         <div className="mb-[37px] flex flex-col  gap-[7px]  ">
-                            <h3 className="text-2xl font-semibold text-[#5E5252]">
-                                this month revenue
+                            <h3 className="text-3xl font-semibold text-[#5E5252]">
+                                Courses in progress
                             </h3>
-                            <p className="text-[40px] font-semibold text-[#494949]">$500</p>
+                            <p className="text-[40px] font-semibold text-[#494949] pl-3">2</p>
                         </div>
                         <div className="mb-[47px] flex flex-col gap-[7px]   ">
-                            <h3 className="text-2xl font-semibold text-[#5E5252]">
-                                life-time revenue
+                            <h3 className="text-3xl font-semibold text-[#5E5252]">
+                                Courses Completed
                             </h3>
-                            <p className="text-[40px] font-semibold text-[#494949]">
-                                $48,789
-                            </p>
+                            <p className="text-[40px] font-semibold text-[#494949] pl-3">3</p>
                         </div>
-                        <div className="flex flex-col gap-[7px]    ">
-                            <h3 className="text-2xl font-semibold text-[#5E5252]">
-                                Hourly rate
+                        <div className="flex flex-col gap-[7px]">
+                            <h3 className="text-3xl font-semibold text-[#5E5252]">
+                                Certificates Earned
                             </h3>
-                            <div className="flex gap-[17px]">
-                                <p className="text-[40px] font-semibold text-[#494949]">$10</p>
-                                <div className="my-auto h-5 w-auto rounded-[30px] bg-[#F2F2F2] px-2 py-0.5 text-xs font-normal text-[#03CD0B]">
-                                    Live
-                                </div>
-                            </div>
+                            <p className="text-[40px] font-semibold text-[#494949] pl-3">3</p>
                         </div>
-                        <p className="mt-[14px] text-sm font-medium text-[#767676]">
-                            100% of UX/UI Sessions were booked at $10 or above
-                        </p>
                     </div>
 
+                    {/* Targeted Skill Status */}
                     <div className="rounded-2xl bg-white lg:px-2 lg:py-4 xl:py-[30px] xl:px-4 ">
-                        <div className="mb-[37px] flex flex-col  gap-[7px]  ">
+                        <div className="mb-[37px] flex flex-col">
                             <h3 className="text-[22px] font-semibold text-[#5E5252]">
-                                Profile completion status
+                                Targeted Skill Status
                             </h3>
-                            <div className="my-auto h-5 w-[37px] rounded-[30px] bg-[#F2F2F2] px-2 py-0.5 text-xs font-normal text-[#03CD0B]">
-                                Live
-                            </div>
                         </div>
                         <label className="text-lg font-medium text-[#767676]">
                             Profile score
@@ -93,8 +84,8 @@ const HomePage = () => {
                                 Live
                             </div>
                         </div>
-                        <div className="text-lg font-medium text-[#767676]">
-                            <div className="flex gap-[11px]">
+                        <div className="text-lg font-medium text-[#767676] flex flex-col gap-3">
+                            <div className="flex gap-3">
                                 <input
                                     type="checkbox"
                                     name="profileUploaded"
@@ -103,7 +94,7 @@ const HomePage = () => {
                                 />
                                 <label>profile uploaded</label>
                             </div>
-                            <div className="flex gap-[11px]">
+                            <div className="flex gap-3">
                                 <input
                                     type="checkbox"
                                     name="profileUploaded"
@@ -112,15 +103,15 @@ const HomePage = () => {
                                 />
                                 <label>profile uploaded</label>
                             </div>
-                            <div>
+                            <div className='flex gap-3'>
                                 <TiTick className="text-[#03CD0B]" />
                                 <label>profile uploaded</label>
                             </div>{' '}
-                            <div>
+                            <div className='flex gap-3'>
                                 <TiTick className="text-[#03CD0B]" />
                                 <label>profile uploaded</label>
                             </div>{' '}
-                            <div>
+                            <div className='flex gap-3'>
                                 <TiTick className="text-[#03CD0B]" />
                                 <label>profile uploaded</label>
                             </div>
