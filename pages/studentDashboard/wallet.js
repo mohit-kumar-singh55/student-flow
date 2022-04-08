@@ -28,8 +28,16 @@ const Wallet = () => {
             </div>
 
             {/* main Container */}
-            <div className='flex items-center sm:justify-between justify-center'>
+            <div className='flex items-center sm:justify-between justify-center flex-wrap gap-x-4 gap-y-8'>
                 {/* cards */}
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
+                <Cards />
                 <Cards />
             </div>
         </div>
