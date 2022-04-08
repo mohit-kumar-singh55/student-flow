@@ -23,6 +23,8 @@
         "react-icons": "^4.3.1",
         "react-range": "^1.8.12",
         "recoil": "^0.6.1",
+        "react-rating": "^2.0.5",
+        "react-responsive": "^9.0.0-beta.6",
         "tailwind-scrollbar-hide": "^1.1.7",
         "yarn": "^1.22.17"
     },

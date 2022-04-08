@@ -2,17 +2,28 @@ import dynamic from 'next/dynamic'
 import { useRouter } from 'next/router'
 
 const SideBar = dynamic(() => import('./SideBar'))
-const RightSidebar = dynamic(() => import('./RightSidebar'))
+const StudentSideBar = dynamic(() => import('./StudentSideBar'))
 const Navbar = dynamic(() => import('./Navbar'))
+const ProfileRightSidebar = dynamic(() => import('./ProfileRightSidebar'))
+const SettingRightSideBar = dynamic(() => import('./SettingRightSideBar'))
 function Layout({ children }) {
   const { route } = useRouter()
   return (
     <div>
       <Navbar />
-      <div className={`flex ${route.split('/')[1] === 'tutorDashboard' && 'bg-[#FFF2E3] flex-col-reverse md:flex-row'} `}>
+      <div
+        className={`flex ${route.split('/')[1] === 'tutorDashboard' &&
+          'flex-col-reverse  bg-[#FFF2E3] lg:flex-row'
+          } `}
+      >
         {route.split('/')[1] === 'tutorDashboard' && <SideBar />}
-        <main className='flex-grow'>{children}</main>
-        {route.split('/')[2] === 'myprofile' && <RightSidebar />}
+        {route.split('/')[1] === 'studentDashboard' && <StudentSideBar />}
+        <main className="w-full flex-grow-0 overflow-x-auto">{children}</main>
+        {route.split('/')[2] === 'myprofile' ? (
+          <ProfileRightSidebar />
+        ) : route.split('/')[2] === 'settings' ? (
+          <SettingRightSideBar />
+        ) : null}
       </div>
     </div>
   )

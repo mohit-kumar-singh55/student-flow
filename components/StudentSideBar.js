@@ -74,8 +74,8 @@ function StudentSideBar() {
         },
     ]
     return (
-        <div className=" xl:w-96 lg:w-[350px] hidden rounded-r-lg bg-white lg:block px-2 ">
-            <span className="block bg-gradient-to-r from-[#feae78] to-[#f94161] bg-clip-text pb-12 pt-2 text-2xl font-bold tracking-widest text-transparent">
+        <div className=" hidden w-[232px] min-w-[232px] max-w-[232px] whitespace-nowrap rounded-r-lg bg-white px-2 lg:block ">
+            <span className="block bg-gradient-to-r from-[#FC4D6D] to-[#FDA02F] bg-clip-text py-8 text-center font-poppins text-2xl font-bold tracking-widest text-transparent">
                 Dashboard
             </span>
             <StudentSideBarLinks links={links} />
@@ -93,8 +93,8 @@ export function StudentSideBarLinks({ links, hideIcon = false }) {
                     <li
                         key={i}
                         className={`align-center mb-5 block justify-center text-left font-roboto text-lg  font-bold ${item.active
-                                ? 'rounded-2xl bg-pink px-4 py-3 xl:px-5 2xl:px-9'
-                                : 'px-4 py-3 xl:px-5 2xl:px-9'
+                            ? 'rounded-2xl bg-pink px-4 py-3 xl:px-5 2xl:px-9'
+                            : 'px-4 py-3 xl:px-5 2xl:px-9'
                             } font-roboto`}
                     >
                         <Link href={item.link}>
