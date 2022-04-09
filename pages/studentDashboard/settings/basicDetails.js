@@ -72,11 +72,11 @@ const BasicDetails = () => {
                     </div>
                     <div className='flex items-center sm:justify-center gap-6 sm:w-fit w-full justify-end'>
                         {/* Plus */}
-                        <span className='tewxt-30px] h-[30px] cursor-pointer'>
+                        <span className='cursor-pointer scale-110'>
                             <AiOutlinePlus />
                         </span>
                         {/* Delete */}
-                        <span className='tewxt-30px] h-[30px] cursor-pointer'>
+                        <span className='cursor-pointer scale-110'>
                             <MdOutlineDelete />
                         </span>
                     </div>
@@ -94,11 +94,11 @@ const BasicDetails = () => {
                     </div>
                     <div className='flex items-center sm:justify-center gap-6 sm:w-fit w-full justify-end'>
                         {/* Plus */}
-                        <span className='tewxt-30px] h-[30px] cursor-pointer'>
+                        <span className='cursor-pointer scale-110'>
                             <AiOutlinePlus />
                         </span>
                         {/* Delete */}
-                        <span className='tewxt-30px] h-[30px] cursor-pointer'>
+                        <span className='cursor-pointer scale-110'>
                             <MdOutlineDelete />
                         </span>
                     </div>
