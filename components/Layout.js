@@ -29,7 +29,7 @@ function Layout({ children }) {
           <SettingRightSideBar />
         ) : null}
 
-        {/* for student */}
+        {/* for student setting */}
         {(route.split('/')[1] === 'studentDashboard' && route.split('/')[2] === 'settings') ? (
           <StudentSettingRightSideBar />
         ) : null}
