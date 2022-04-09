@@ -35,7 +35,7 @@ function NameAndLogin() {
     return (
         <>
             <div>
-                <div className="md-[1px] h1wi ml-[1px] mb-[1px] bg-white  capitalize lg:ml-[30px] lg:mt-[34px] lg:mb-[30px] lg:rounded-2xl ">
+                <div className="md-[1px] h1wi ml-[1px] mb-[1px] bg-white  capitalize lg:ml-[30px] lg:mt-[34px] lg:mb-[30px] lg:rounded-2xl">
                     <div
                         id="heading"
                         className="col-span-12  p-5 text-3xl font-semibold text-[#3d3d3d] xl:px-12"
@@ -76,8 +76,7 @@ function NameAndLogin() {
                                 </div>
                                 <Field
                                     type="number"
-                                    name="phonenumber
-                "
+                                    name="phonenumber"
                                     className=" my-auto h-10 w-full focus:outline-none"
                                 />
                             </div>
