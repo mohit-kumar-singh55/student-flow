@@ -6,7 +6,7 @@ function StudentSettingRightSideBar() {
     const router = useRouter();
 
     return (
-        <div className="mt-5 mr-7 ml-3 whitespace-nowrap font-poppins lg:mt-[110px] xl:mr-14 xl:ml-[26px] overflow-x-scroll">
+        <div className="mt-5 mr-7 ml-3 whitespace-nowrap font-poppins lg:mt-[110px] xl:mr-14 xl:ml-[26px]">
             <nav>
                 <ul className="flex flex-row justify-between lg:gap-y-[19px] gap-x-10 lg:mb-0 mb-2 overflow-x-scroll text-[14px] lg:flex-col lg:whitespace-nowrap ">
                     <li
