@@ -349,13 +349,19 @@ const Sidebox = () => {
 // right sidebar
 const RightSidebar = () => {
     return (
-        <div className='flex flex-col sm:w-[309px] w-full md:h-[632px] h-[360px] gap-2'>
+        <div className='flex flex-col sm:w-[309px] w-full md:h-[600px] h-fit gap-2'>
             <p className='pl-1 font-semibold text-lg tracking-wide text-[#414141]'>
                 My Targeted skills
             </p>
             {/* skills */}
-            <div className='flex flex-col items-center gap-1 pt-1 bg-white rounded-2xl w-full h-full overflow-y-scroll'>
+            <div className='flex flex-col items-center gap-2 bg-white rounded-2xl w-full md:h-full md:max-h-full max-h-[330px] py-3 overflow-y-scroll'>
                 {/* map on it */}
+                <SkillsCard />
+                <SkillsCard />
+                <SkillsCard />
+                <SkillsCard />
+                <SkillsCard />
+                <SkillsCard />
                 <SkillsCard />
                 <SkillsCard />
                 <SkillsCard />
@@ -369,7 +375,7 @@ const RightSidebar = () => {
 // skills card
 const SkillsCard = () => {
     return (
-        <div className='w-full h-[75px] flex items-center justify-start ms:gap-4 gap-6 md:pl-5 pl-8 rounded-md'>
+        <div className='w-full h-[75px] flex flex-1 items-center justify-start md:gap-4 gap-6 md:pl-5 pl-8 py-2 rounded-md'>
             {/* Image */}
             <div className='relative w-12 h-12'>
                 <Image
