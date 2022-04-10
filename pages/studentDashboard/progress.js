@@ -30,7 +30,7 @@ export default Progress;
 // main
 const Main = () => {
     return (
-        <div className='bg-white rounded-2xl sm:flex-1 max-h-fit py-4 px-8'>
+        <div className='bg-white rounded-2xl sm:flex-1 sm:w-fit w-full max-h-fit py-4 px-8'>
             {/* top */}
             <Top />
 
@@ -85,83 +85,85 @@ const Top = () => {
 // steps
 const Steps = () => {
     return (
-        <div className='overflow-scroll w-[300px] max-h-[450px] hidden md:flex flex-col items-center font-roboto'>
-            {/* 1st */}
-            <div className='flex items-start w-full justify-between gap-3'>
-                <div className='flex flex-col gap-1 items-end'>
-                    <p>
-                        Session 1
-                    </p>
-                    <p className='text-[#888888]'>
-                        Introduction
-                    </p>
+        <div className='overflow-y-scroll w-[300px] max-h-[450px]'>
+            <div className='hidden md:flex flex-col items-center font-roboto'>
+                {/* 1st */}
+                <div className='flex items-start w-full justify-between gap-3'>
+                    <div className='flex flex-col gap-1 items-end'>
+                        <p>
+                            Session 1
+                        </p>
+                        <p className='text-[#888888]'>
+                            Introduction
+                        </p>
+                    </div>
+
+                    {/* check */}
+                    <div className='flex items-center justify-center flex-col'>
+                        <TickGreen />
+                    </div>
+
+                    {/* chip */}
+                    <small className='text-[#20C374] font-medium mt-2'>
+                        completed
+                    </small>
                 </div>
 
-                {/* check */}
-                <div className='flex items-center justify-center flex-col'>
-                    <TickGreen />
+                {/* lines */}
+                <VerticalLines />
+
+                {/* 2nd */}
+                <div className='flex items-start w-full justify-between gap-3'>
+                    <div className='flex flex-col gap-1 items-end'>
+                        <p>
+                            Session 2
+                        </p>
+                        <p className='text-[#888888]'>
+                            Introduction
+                        </p>
+                    </div>
+
+                    {/* check */}
+                    <div className='flex items-center justify-center flex-col mt-1'>
+                        <p className='w-[45px] h-[45px] rounded-full text-white text-2xl bg-[#00E676] flex items-center justify-center font-semibold'>
+                            2
+                        </p>
+                    </div>
+
+                    {/* chip */}
+                    <small className='font-medium rounded-md mt-2 text-[#1976D2]'>
+                        In Progress
+                    </small>
                 </div>
 
-                {/* chip */}
-                <small className='text-[#20C374] font-medium mt-2'>
-                    completed
-                </small>
+                {/* lines */}
+                <VerticalLines />
+
+                {/* 3nd */}
+                <div className='flex items-start w-full justify-between gap-3'>
+                    <div className='flex flex-col gap-1 items-end'>
+                        <p>
+                            Session 3
+                        </p>
+                        <p className='text-[#888888]'>
+                            Introduction
+                        </p>
+                    </div>
+
+                    {/* check */}
+                    <div className='flex items-center justify-center flex-col'>
+                        <TickGreen />
+                    </div>
+
+                    {/* chip */}
+                    <small className='text-[#20C374] font-medium mt-2'>
+                        completed
+                    </small>
+                </div>
+
+                {/* lines */}
+                <VerticalLines />
             </div>
-
-            {/* lines */}
-            <VerticalLines />
-
-            {/* 2nd */}
-            <div className='flex items-start w-full justify-between gap-3'>
-                <div className='flex flex-col gap-1 items-end'>
-                    <p>
-                        Session 2
-                    </p>
-                    <p className='text-[#888888]'>
-                        Introduction
-                    </p>
-                </div>
-
-                {/* check */}
-                <div className='flex items-center justify-center flex-col mt-1'>
-                    <p className='w-[45px] h-[45px] rounded-full text-white text-2xl bg-[#00E676] flex items-center justify-center font-semibold'>
-                        2
-                    </p>
-                </div>
-
-                {/* chip */}
-                <small className='font-medium rounded-md mt-2 text-[#1976D2]'>
-                    In Progress
-                </small>
-            </div>
-
-            {/* lines */}
-            <VerticalLines />
-
-            {/* 3nd */}
-            <div className='flex items-start w-full justify-between gap-3'>
-                <div className='flex flex-col gap-1 items-end'>
-                    <p>
-                        Session 3
-                    </p>
-                    <p className='text-[#888888]'>
-                        Introduction
-                    </p>
-                </div>
-
-                {/* check */}
-                <div className='flex items-center justify-center flex-col'>
-                    <TickGreen />
-                </div>
-
-                {/* chip */}
-                <small className='text-[#20C374] font-medium mt-2'>
-                    completed
-                </small>
-            </div>
-
-            {/* lines */}
-            <VerticalLines />
         </div>
     )
 }
@@ -170,80 +172,82 @@ const Steps = () => {
 // steps for modile
 const StepsMobile = () => {
     return (
-        <div className='max-w-full overflow-x-scroll h-[150px] md:hidden flex items-center justify-start'>
-            {/* 1st */}
-            <div className='flex flex-col items-center justify-between h-full'>
-                {/* chip */}
-                <small className='text-[#20C374] font-medium mt-2'>
-                    completed
-                </small>
+        <div className='overflow-x-scroll h-[150px] max-w-full'>
+            <div className='md:hidden flex items-center justify-start h-full w-fit'>
+                {/* 1st */}
+                <div className='flex flex-col items-center justify-between h-full'>
+                    {/* chip */}
+                    <small className='text-[#20C374] font-medium mt-2'>
+                        completed
+                    </small>
 
-                {/* check */}
-                <div className='flex items-center justify-center flex-col'>
-                    <TickGreen />
+                    {/* check */}
+                    <div className='flex items-center justify-center flex-col'>
+                        <TickGreen />
+                    </div>
+
+                    <div className='flex flex-col gap-1 items-center'>
+                        <p>
+                            Session 1
+                        </p>
+                        <p className='text-[#888888]'>
+                            Introduction
+                        </p>
+                    </div>
                 </div>
 
-                <div className='flex flex-col gap-1 items-center'>
-                    <p>
-                        Session 1
-                    </p>
-                    <p className='text-[#888888]'>
-                        Introduction
-                    </p>
-                </div>
-            </div>
+                {/* lines */}
+                <HorizontalLines />
 
-            {/* lines */}
-            <HorizontalLines />
+                {/* 2nd */}
+                <div className='flex flex-col items-center justify-between h-full'>
+                    {/* chip */}
+                    <small className='font-medium rounded-md mt-2 text-[#1976D2]'>
+                        In Progress
+                    </small>
 
-            {/* 2nd */}
-            <div className='flex flex-col items-center justify-between h-full'>
-                {/* chip */}
-                <small className='font-medium rounded-md mt-2 text-[#1976D2]'>
-                    In Progress
-                </small>
+                    {/* check */}
+                    <div className='flex items-center justify-center flex-col mt-1'>
+                        <p className='w-[45px] h-[45px] rounded-full text-white text-2xl bg-[#00E676] flex items-center justify-center font-semibold'>
+                            2
+                        </p>
+                    </div>
 
-                {/* check */}
-                <div className='flex items-center justify-center flex-col mt-1'>
-                    <p className='w-[45px] h-[45px] rounded-full text-white text-2xl bg-[#00E676] flex items-center justify-center font-semibold'>
-                        2
-                    </p>
-                </div>
-
-                <div className='flex flex-col gap-1 items-center'>
-                    <p>
-                        Session 2
-                    </p>
-                    <p className='text-[#888888]'>
-                        Introduction
-                    </p>
-                </div>
-            </div>
-
-            {/* lines */}
-            <HorizontalLines />
-
-            {/* 3nd */}
-            <div className='flex flex-col items-center justify-between h-full'>
-                {/* chip */}
-                <small className='font-medium rounded-md mt-2 text-[#1976D2]'>
-                    In Progress
-                </small>
-
-                {/* check */}
-                <div className='flex items-center justify-center flex-col mt-1'>
-                    <p className='w-[45px] h-[45px] rounded-full text-white text-2xl bg-[#00E676] flex items-center justify-center font-semibold'>
-                        3
-                    </p>
+                    <div className='flex flex-col gap-1 items-center'>
+                        <p>
+                            Session 2
+                        </p>
+                        <p className='text-[#888888]'>
+                            Introduction
+                        </p>
+                    </div>
                 </div>
 
-                <div className='flex flex-col gap-1 items-center'>
-                    <p>
-                        Session 3
-                    </p>
-                    <p className='text-[#888888]'>
-                        Introduction
-                    </p>
+                {/* lines */}
+                <HorizontalLines />
+
+                {/* 3nd */}
+                <div className='flex flex-col items-center justify-between h-full'>
+                    {/* chip */}
+                    <small className='font-medium rounded-md mt-2 text-[#1976D2]'>
+                        In Progress
+                    </small>
+
+                    {/* check */}
+                    <div className='flex items-center justify-center flex-col mt-1'>
+                        <p className='w-[45px] h-[45px] rounded-full text-white text-2xl bg-[#00E676] flex items-center justify-center font-semibold'>
+                            3
+                        </p>
+                    </div>
+
+                    <div className='flex flex-col gap-1 items-center'>
+                        <p>
+                            Session 3
+                        </p>
+                        <p className='text-[#888888]'>
+                            Introduction
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -268,7 +272,7 @@ const VerticalLines = () => {
     return (
         <>
             <span className='h-14 w-[2px] bg-[#9E9E9E] relative left-[10px]' />
-            <span className='w-2 h-[11px] rounded-full bg-[#9E9E9E] relative left-[10px]' />
+            <span className='w-2 h-[8px] rounded-full bg-[#9E9E9E] relative left-[10px]' />
             <span className='h-14 w-[2px] bg-[#9E9E9E] mt-4 relative left-[10px]' />
         </>
     )
